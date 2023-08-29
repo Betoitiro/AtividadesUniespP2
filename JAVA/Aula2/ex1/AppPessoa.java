@@ -1,4 +1,4 @@
-package JAVA.Aula2;
+package JAVA.Aula2.ex1;
 
 public class AppPessoa {
     public static void main(String[] args) {

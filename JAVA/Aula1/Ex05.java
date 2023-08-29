@@ -1,4 +1,4 @@
-package JAVA;
+package JAVA.Aula1;
 import java.util.Scanner;
 
 public class Ex05 {
