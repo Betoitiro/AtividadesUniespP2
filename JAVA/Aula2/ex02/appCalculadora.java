@@ -5,10 +5,7 @@ public class appCalculadora {
 
         calculadora c1 = new calculadora();
 
-        c1.Somar();
-        c1.subtrair();
-        c1.multiplicar();
-        c1.dividir();
+        c1.calc();
         
     }
 }
