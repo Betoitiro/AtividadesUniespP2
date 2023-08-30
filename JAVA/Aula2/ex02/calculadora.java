@@ -4,13 +4,18 @@ import java.util.Scanner;
 
 public class calculadora {
     
-    Scanner sc = new Scanner(System.in);
-
+    
     public void calc(){
-        System.out.println("Digite a opção desejada:");
-        System.out.println("1 somar \n 2 subtrair \n 3 multiplicar \n 4 dividir");
-        int n = sc.nextInt();
-        if(n ==1){
+        
+        Scanner sc = new Scanner(System.in);
+        int x;
+        do{
+            System.out.println("1 somar \n 2 subtrair \n 3 multiplicar \n 4 dividir"); 
+            System.out.println("Digite a opção desejada:");
+            x = sc.nextInt();
+            
+            switch(x){
+                case 1:
                 System.out.println("Digite o primeiro numero: ");
                 double n1 = sc.nextDouble();
         
@@ -20,45 +25,50 @@ public class calculadora {
                 double somar = n1 + n2;
         
                 System.out.printf("O resultado da soma é de: %s \n", somar);
-
-        }else if(n ==2){
-            System.out.println("Digite o primeiro numero: ");
-            double n1 = sc.nextDouble();
-        
-            System.out.println("Digite o segundo numero: ");
-            double n2 = sc.nextDouble();
-        
-            double subtrair = n1 - n2;  
-        
-            System.out.printf("O resultado da subtração é de %s \n", subtrair);
-
-        }else if(n ==3){
+                
+                break;
+                case 2:
+                System.out.println("Digite o primeiro numero: ");
+                double n3 = sc.nextDouble();
             
-            System.out.println("Digite o primeiro numero: ");
-            double n1 = sc.nextDouble();
-        
-            System.out.println("Digite o segundo numero: ");
-            double n2 = sc.nextDouble();
-        
-            double multiplicar = n1 * n2;
-        
-            System.out.printf("O resultado da multiplicação é de: %s \n", multiplicar);
-
-
-        }else if(n ==4){
+                System.out.println("Digite o segundo numero: ");
+                double n4 = sc.nextDouble();
             
-            System.out.println("Digite o primeiro numero: ");
-            double n1 = sc.nextDouble();
-        
-            System.out.println("Digite o segundo numero: ");
-            double n2 = sc.nextDouble();
-        
-            double dividir = n1 / n2;
-        
-            System.out.printf("O resultado da divisão é de: %s \n", dividir);
+                double subtrair = n3 - n4;  
+            
+                System.out.printf("O resultado da subtração é de %s \n", subtrair);
 
-        }
+                break;
 
-    }   
+                case 3:
+                System.out.println("Digite o primeiro numero: ");
+                double n5 = sc.nextDouble();
+            
+                System.out.println("Digite o segundo numero: ");
+                double n6 = sc.nextDouble();
+            
+                double multiplicar = n5 * n6;
+            
+                System.out.printf("O resultado da multiplicação é de: %s \n", multiplicar);
+    
+                break;
+
+                case 4:
+                System.out.println("Digite o primeiro numero: ");
+                double n7 = sc.nextDouble();
+            
+                System.out.println("Digite o segundo numero: ");
+                double n8 = sc.nextDouble();
+            
+                double dividir = n7 / n8;
+            
+                System.out.printf("O resultado da divisão é de: %s \n", dividir);
+            }
+            
+        }while(x==0);
+
+        sc.close();
+    
+    }
 
 }
