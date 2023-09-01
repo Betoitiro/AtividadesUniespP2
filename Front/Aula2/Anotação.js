@@ -37,15 +37,12 @@ if(nome =="humberto"){
 
 //somando valotes
 
-var n1 = prompt("Digite um numero: ");
-var n2 = prompt("Digite outro numero: ");
-
-var n1 = parseFloat(n1);
-var n2 = parseFloat(n2);
+var n1 = parseFloat(prompt("Digite um numero: "));
+var n2 = parseFloat(prompt("Digite outro numero: "));
 
 
-var soma = n1 + n2;
-var soma = parseFloat(soma)
+
+var soma = parseFloat(n1 + n2);
 
 alert("A soma dos valores " + n1 +" + "+ n2 + " é de " + soma);
 
