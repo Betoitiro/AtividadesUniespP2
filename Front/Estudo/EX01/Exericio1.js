@@ -1,3 +1,5 @@
+/*Script responsavel por verificar a idade do usuario atravez do prompt*/
+
 alert("Indentificador de idade: ");
 
 var ano = parseInt(prompt("Digite o ano que voce nasceu: "));
