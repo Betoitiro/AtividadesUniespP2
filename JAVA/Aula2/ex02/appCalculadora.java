@@ -1,4 +1,4 @@
-package JAVA.Aula2.ex02;
+package Aula2.ex02;
 
 public class appCalculadora {
     public static void main(String[] args) {

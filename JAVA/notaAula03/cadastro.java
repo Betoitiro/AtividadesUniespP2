@@ -6,6 +6,7 @@ public class cadastro {
     private int codigo;
     private String nome;
     public int quantidade;
+    private int x;
 
     Scanner sc = new Scanner(System.in);
 
@@ -40,28 +41,32 @@ public class cadastro {
     }
 
     public void Vender(){
-        System.out.println("1: vender");
-        System.out.println("0: processo encerrado");
-        System.out.println("Oque deseja: ");
-        int x = sc.nextInt();
-
-        switch (x) {
-            case 1:
-            System.out.println("A quantidade que deseja comprar: ");
-            int y = sc.nextInt();
-                int c = quantidade - y;
-                if(quantidade >=0){
-                    
-                    System.out.println("Voce vendeu " + y + " resta " + c);
-                }else{
-                    System.out.println("Quantidade superior a disponivel");
+        
+        do {
+            System.out.println("1: vender");
+            System.out.println("0: processo encerrado");
+            System.out.println("Oque deseja: ");
+            int x = sc.nextInt();
+            
+                switch (x) {
+                    case 1:
+                    System.out.println("A quantidade que deseja comprar: ");
+                    int y = sc.nextInt();
+                        int c = quantidade - y;
+                        if(quantidade >=0){
+                            
+                            System.out.println("Voce vendeu " + y + " resta " + c);
+                        }else{
+                            System.out.println("Quantidade superior a disponivel");
+                        }
+                        break;
+                    case 0:
+                        System.out.println("operação encerrada!!");
+                    default:
+                        break;
                 }
-                break;
-            case 0:
-                System.out.println("operação encerrada!!");
-            default:
-                break;
-        }
+        }while (x == 0); //colocando um loop no codigo
+        sc.close();
     }
     
 

@@ -1,4 +1,4 @@
-package JAVA.Aula3;
+package Aula3;
 
 
 public class ex01 {

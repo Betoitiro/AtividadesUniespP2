@@ -1,4 +1,4 @@
-package JAVA.Aula2.ex1;
+package Aula2.ex1;
 
 public class Pessoa {
     int idade = 18;

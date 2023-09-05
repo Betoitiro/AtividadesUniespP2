@@ -1,4 +1,4 @@
-package JAVA.Aula2.ex03;
+package Aula2.ex03;
 
 public class Funcionario {
     int matricula;

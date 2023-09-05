@@ -1,4 +1,4 @@
-package JAVA.Aula2.ex04;
+package Aula2.ex04;
 
 public class AppMedia {
     

@@ -1,4 +1,4 @@
-package JAVA.Aula2.ex03;
+package Aula2.ex03;
 
 public class App_funcionario {
     public static void main(String[] args) {
