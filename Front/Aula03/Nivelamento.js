@@ -1,30 +1,38 @@
+document.addEventListener("DOMContentLoaded", function () {
+    var quantidadeMulher = 0;
+    var AlturaMediaHomens = 0.0;
+    var quantidadeHomens = 0;
+    var maiorAltura = Number.NEGATIVE_INFINITY;
+    var menorAltura = Number.POSITIVE_INFINITY;
+    var i = 0;
 
-var quantidadeMulher = 0;
-var AlturaMediaHomens = 0.0;
-var quantidadeHomens = 0;
-var maiorAltura = Number.NEGATIVE_INFINITY;
-var menorAltura = Number.POSITIVE_INFINITY;
+    document.getElementById("proximoButton").addEventListener("click", function () {
+        if (i < 15) { 
+            var sexoI = document.getElementById("sexoInput").value;
+            var sexo = sexoI.toLowerCase();
+            var altura = parseFloat(document.getElementById("alturaInput").value);
 
+            if (sexo == "feminino") {
+                quantidadeMulher++;
+            } else if (sexo == "masculino") {
+                quantidadeHomens++;
+                AlturaMediaHomens += altura;
+            }
 
-for(var i = 1; i <=15; i++){
-    var sexoI = prompt("Digite seu sexo: ");
-    var sexo = sexoI.toLowerCase();
-    var altura = parseFloat(prompt("Informe a sua altura: "));
+            if (altura > maiorAltura) {
+                maiorAltura = altura;
+            }
+            if (altura < menorAltura) {
+                menorAltura = altura;
+            }
 
-    if(sexo =="feminino"){
-        quantidadeMulher ++;
-    }else if (sexo == "masculino"){
-        quantidadeHomens ++;
-        AlturaMediaHomens +=altura;
-    }
+            AlturaMediaHomens = AlturaMediaHomens / quantidadeHomens;
 
-    if (altura > maiorAltura) {
-        maiorAltura = altura;
-    }
-    if (altura < menorAltura) {
-        menorAltura = altura;
-    }
+            document.getElementById("qntM").innerHTML = quantidadeMulher;
 
-    AltmediaH = AltmediaH / QuantidadeH;
-
-}
+            i++;
+        } else {
+            alert("Você já completou as 15 iterações.");
+        }
+    });
+});
