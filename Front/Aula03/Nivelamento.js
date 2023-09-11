@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var i = 0;
 
     document.getElementById("proximoButton").addEventListener("click", function () {
-        if (i < 15) { 
+        if (i <5) { 
             var sexoI = document.getElementById("sexoInput").value;
             var sexo = sexoI.toLowerCase();
             var altura = parseFloat(document.getElementById("alturaInput").value);
