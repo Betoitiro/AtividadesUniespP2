@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var i = 0;
 
     document.getElementById("proximoButton").addEventListener("click", function () {
-        if (i <5) { 
+        if (i < 5) {
             var sexoI = document.getElementById("sexoInput").value;
             var sexo = sexoI.toLowerCase();
             var altura = parseFloat(document.getElementById("alturaInput").value);
@@ -26,13 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 menorAltura = altura;
             }
 
-            AlturaMediaHomens = AlturaMediaHomens / quantidadeHomens;
-
-            document.getElementById("qntM").innerHTML = quantidadeMulher;
-
             i++;
         } else {
-            alert("Você já completou as 15 iterações.");
+            // Após as 5 iterações, calcular a altura média dos homens e exibir as informações.
+            AlturaMediaHomens = AlturaMediaHomens / quantidadeHomens;
+            document.getElementById("qntM").innerHTML = quantidadeMulher;
+            document.getElementById("maiorAltura").innerHTML = maiorAltura;
+            document.getElementById("menorAltura").innerHTML = menorAltura;
+            document.getElementById("alturaMediaHomens").innerHTML = AlturaMediaHomens;
+            
+            alert("Você já completou as 5 iterações.");
         }
     });
 });

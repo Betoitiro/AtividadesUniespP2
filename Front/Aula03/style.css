@@ -1,20 +1,41 @@
-body{
+/* Estilo para o corpo da página */
+body {
     background-color: bisque;
-    font: 18px Arial;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center; /* Centraliza o texto */
 }
-.tit{
-    font: 30px Arial;
+
+/* Estilo para o título */
+.tit {
+    font-size: 30px;
+    margin-top: 20px; /* Adiciona um espaço extra acima do título */
 }
-.box{
-    margin-top: 5px;
-    border-radius: 500px;
-    margin-left: 310px;
-    width: 200px; /*Modificar a largura da caixa*/
-    height: 20px; /*Modificar a altura da caixa*/
-}
-.ent{
-    margin-left: 380px;
-    border-radius: 500px;
+
+/* Estilo para as caixas de entrada de texto */
+.box {
+    margin-top: 10px;
+    border-radius: 10px; /* Reduzi o raio da borda para 10px (pode ajustar conforme necessário) */
     width: 200px;
-    width: 70px;
+    height: 30px; /* Aumentei a altura para melhorar a usabilidade */
+    padding: 5px; /* Adicionei um preenchimento interno para melhorar a aparência */
+    border: 1px solid #ccc; /* Adicionei uma borda para destacar as caixas */
+}
+
+/* Estilo para o botão */
+.ent {
+    margin-top: 10px; /* Adiciona um espaço entre a caixa de entrada e o botão */
+    border-radius: 10px;
+    width: 200px;
+    height: 40px; /* Aumentei a altura do botão para melhorar a usabilidade */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
+}
+
+/* Estilo para os resultados */
+.resultados {
+    font-weight: bold; /* Deixa o texto dos resultados em negrito */
 }
