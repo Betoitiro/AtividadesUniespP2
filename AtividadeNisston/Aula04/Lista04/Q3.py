@@ -18,3 +18,5 @@ def encontrar_Min(vetor):
 vetor = [1 ,3,5,6,8,7,6,5,4]
 print(encontrar_Max(vetor))
 print(encontrar_Min(vetor))
+#rep = encontrar_Max(vetor)
+#print(rep[0], rep[1])
