@@ -34,6 +34,13 @@ body{
     border-radius: 500px;
     background-color:cadetblue;
 }
+.bcr{
+    position: absolute;
+    top: 550px;
+    left: 670px;
+    border-radius: 500px;
+    background-color:cadetblue;
+}
 
 .ca{
     margin-top: 130px;
