@@ -1,41 +1,24 @@
 /* Estilo para o corpo da página */
 body {
-    background-color: bisque;
+    background-color: rgb(94, 91, 87);
     font-family: Arial, sans-serif;
     font-size: 18px;
     text-align: center; /* Centraliza o texto */
 }
 
-/* Estilo para o título */
-.tit {
-    font-size: 30px;
-    margin-top: 20px; /* Adiciona um espaço extra acima do título */
+#sexo{
+    border-radius: 100px;
+}
+#altura{
+    border-radius: 100px;
 }
 
-/* Estilo para as caixas de entrada de texto */
-.box {
-    margin-top: 10px;
-    border-radius: 10px; /* Reduzi o raio da borda para 10px (pode ajustar conforme necessário) */
-    width: 200px;
-    height: 30px; /* Aumentei a altura para melhorar a usabilidade */
-    padding: 5px; /* Adicionei um preenchimento interno para melhorar a aparência */
-    border: 1px solid #ccc; /* Adicionei uma borda para destacar as caixas */
+#proximoButton{
+    border-radius: 100px;
 }
 
-/* Estilo para o botão */
-.ent {
-    margin-top: 10px; /* Adiciona um espaço entre a caixa de entrada e o botão */
-    border-radius: 10px;
-    width: 200px;
-    height: 40px; /* Aumentei a altura do botão para melhorar a usabilidade */
-    background-color: #007BFF; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    font-weight: bold; /* Deixa o texto em negrito */
-    border: none; /* Remove a borda do botão */
-    cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
-}
-
-/* Estilo para os resultados */
-.resultados {
-    font-weight: bold; /* Deixa o texto dos resultados em negrito */
+.resul{
+    top: 250px;
+    position: absolute;
+    right:440px;
 }

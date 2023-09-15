@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("proximoButton").addEventListener("click", function () {
         if (i < 5) {
-            var sexoI = document.getElementById("sexoInput").value;
+            var sexoI = document.getElementById("sexo").value;
             var sexo = sexoI.toLowerCase();
-            var altura = parseFloat(document.getElementById("alturaInput").value);
+            var altura = parseFloat(document.getElementById("altura").value);
 
-            if (sexo == "feminino") {
+            if (sexo === "feminino") {
                 quantidadeMulher++;
-            } else if (sexo == "masculino") {
+            } else if (sexo === "masculino") {
                 quantidadeHomens++;
                 AlturaMediaHomens += altura;
             }
@@ -26,16 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 menorAltura = altura;
             }
 
+            document.getElementById("sexo").value = " ";
+            document.getElementById("altura").value = " ";
+
             i++;
         } else {
             // Após as 5 iterações, calcular a altura média dos homens e exibir as informações.
             AlturaMediaHomens = AlturaMediaHomens / quantidadeHomens;
-            document.getElementById("qntM").innerHTML = quantidadeMulher;
-            document.getElementById("maiorAltura").innerHTML = maiorAltura;
-            document.getElementById("menorAltura").innerHTML = menorAltura;
-            document.getElementById("alturaMediaHomens").innerHTML = AlturaMediaHomens;
-            
-            alert("Você já completou as 5 iterações.");
+            document.getElementById("qntM").textContent = "Quantidade de mulheres: "+quantidadeMulher;
+            document.getElementById("maiorAltura").textContent = "Maior altura " + maiorAltura;
+            document.getElementById("menorAltura").textContent = "Menor altura "+menorAltura;
+            document.getElementById("alturaMediaHomens").textContent ="Altura media dos homens " + AlturaMediaHomens;
         }
     });
 });
