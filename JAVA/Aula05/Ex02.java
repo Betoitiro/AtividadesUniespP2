@@ -32,6 +32,6 @@ public class Ex02 {
     }
 
     public void Status(){
-        System.out.printf(tipo +"/n Preço"  + preco + "\n" + nome +"\n");
+        System.out.printf(tipo +"\nPreço "  + preco + "\n" + nome +"\n");
     }
 }

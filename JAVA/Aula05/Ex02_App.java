@@ -7,6 +7,7 @@ public class Ex02_App {
         Ex02 p2 = new Ex02("Calça", 50.0, "Calça azul");
 
         p1.Status();
+        System.out.println();
         p2.Status();
     }
 }
