@@ -1,4 +1,4 @@
-package Empresa.NotaEx02;
+package IMC.Funcionario.Empresa.NotaEx02;
 
 public class Funcionario {
     private String nome;
